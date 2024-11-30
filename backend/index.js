@@ -18,11 +18,13 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 app.use(cookieParser());
-const corsOptions = {
-  origin: true, // Allows all origins
-  credentials: true, // Enables credentials (cookies, authorization headers, etc.)
-};
-app.use(cors(corsOptions));
+app.use(
+  cors({
+    origin: "*", // Allow all origins
+    methods: "GET,POST,PUT,DELETE,OPTIONS", // Allow all necessary HTTP methods
+    allowedHeaders: "Content-Type,Authorization", // Allow specific headers
+  })
+);
 
 // api
 app.use("/api/user",userRoute);
