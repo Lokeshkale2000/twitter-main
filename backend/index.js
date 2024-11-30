@@ -19,9 +19,9 @@ app.use(express.urlencoded({
 app.use(express.json());
 app.use(cookieParser());
 const corsOptions = {
-    origin:"http://localhost:3001",
-    credentials:true
-}
+  origin: true, // Allows all origins
+  credentials: true, // Enables credentials (cookies, authorization headers, etc.)
+};
 app.use(cors(corsOptions));
 
 // api
