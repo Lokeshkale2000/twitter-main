@@ -28,7 +28,7 @@ const Login = () => {
         }); 
         dispatch(getUser(res?.data?.user));
         if(res.data.success){
-          navigate("");
+          navigate("/");
           toast.success(res.data.message);
         }
       } catch (error) {
