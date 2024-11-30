@@ -1,5 +1,5 @@
-export const USER_API_END_POINT ="https://twitter-main-seven.vercel.app/?vercelToolbarCode=ZWAdLjGUbOnK1ei/api/v1/user";
-export const TWEET_API_END_POINT ="https://twitter-main-seven.vercel.app/?vercelToolbarCode=ZWAdLjGUbOnK1ei/api/v1/tweet";
+export const USER_API_END_POINT ="https://twitter-main-seven.vercel.app/?vercelToolbarCode=ZWAdLjGUbOnK1ei/api/user";
+export const TWEET_API_END_POINT ="https://twitter-main-seven.vercel.app/?vercelToolbarCode=ZWAdLjGUbOnK1ei/api/tweet";
 
 export const timeSince = (timestamp) => {
   let time = Date.parse(timestamp);
